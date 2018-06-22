@@ -1,0 +1,22 @@
+h1 {
+  text-align: center;
+  color: yellowgreen;
+  font-family: cursive;
+  line-height: 3rem;
+  text-shadow: 1px 1px 1px black;
+}
+
+section > h2 {
+  color: lightsalmon;
+  text-decoration: underline;
+}
+
+em {
+  font-style: normal;
+  font-weight: bold;
+}
+
+p {
+  text-indent: 2rem;
+  font-size: 1.2rem;
+}
