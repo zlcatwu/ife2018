@@ -1,0 +1,44 @@
+h1 {
+  text-align: center;
+  color: yellowgreen;
+  font-family: cursive;
+  line-height: 3rem;
+  text-shadow: 1px 1px 1px black;
+  background-image: linear-gradient(to bottom right, yellow 40%, red, orange 60%);
+}
+
+section > h2 {
+  color: lightsalmon;
+  text-decoration: underline;
+}
+
+em {
+  font-style: normal;
+  font-weight: bold;
+}
+
+p {
+  text-indent: 2rem;
+  font-size: 1.2rem;
+}
+
+a.email {
+  text-decoration: none;
+}
+
+a.email:hover {
+  color: greenyellow;
+}
+
+section.basic ul {
+  list-style-type: square;
+}
+
+section.edu ul {
+  list-style-type: none;
+}
+
+article.project {
+  border: 10px double red;
+  padding: 1rem;
+}
