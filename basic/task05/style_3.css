@@ -1,0 +1,68 @@
+/* 通用样式 */
+body {
+  margin: 0;
+}
+
+ul {
+  padding: 0;
+}
+
+li {
+  list-style-type: none;
+}
+
+.title {
+  font-weight: 700;
+}
+
+/* 大标题 */
+h1 {
+  padding-left: 1rem;
+  margin: 0;
+
+  font-size: 1.6rem;
+  line-height: 6rem;
+
+  background-color: #747474;
+  color: #fff;
+}
+
+/* 子项目布局 */
+section {
+  overflow: hidden;
+
+  border: 1px solid #e6e6e6;
+}
+
+section h2 {
+  float: left;
+
+  width: 10%;
+  margin: 0;
+  border-bottom: 1px solid #fff;
+
+  font-size: 1.2rem;
+  text-align: center;
+  line-height: 6rem;
+
+  background-color: #cdcdcd;
+}
+
+section ul {
+  float: left;
+
+  width: 80%;
+}
+
+.basic li,
+.contact li {
+  display: inline-block;
+
+  margin-left: 1rem;
+}
+
+.ability li,
+.edu li,
+.project li {
+  margin-left: 1rem;
+}

@@ -1,0 +1,51 @@
+/* 通用样式 */
+section ul {
+  padding: 0;
+  list-style-type: none;
+}
+
+section .title {
+  font-weight: 700;
+}
+
+/* 基本信息 */
+.basic ul li {
+  display: inline-block;
+  margin-right: 1rem;
+}
+
+/* 联系方式 */
+.contact ul li {
+  display: inline-block;
+  margin-right: 1rem;
+}
+
+/* 能力描述 */
+.ability li {
+  margin-top: .8rem;
+}
+
+.ability .title,
+.ability .val {
+  display: block;
+}
+
+/* 教育经历 */
+.edu li {
+  margin-top: .8rem;
+}
+
+.edu .title,
+.edu .val {
+  display: block;
+}
+
+/* 项目经历 */
+.project li {
+  margin-top: .8rem;
+}
+
+.project .title,
+.project .val {
+  display: block;
+}
