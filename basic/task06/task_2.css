@@ -1,0 +1,152 @@
+body {
+  margin: 0;
+}
+
+/* 导航栏 */
+
+header {
+  width: 100%;
+
+  background-color: #262626;
+}
+
+header .container {
+  position: relative;
+
+  margin: 0 auto;
+
+  width: 960px;
+}
+
+header .logo {
+  padding: 1rem 0;
+  
+  font-size: 2rem;
+
+  color: #fff;
+}
+
+header nav {
+  position: absolute;
+  right: 0;
+  top: 6px;
+}
+
+header nav a {
+  color: #fff;
+}
+
+/* Banner */
+
+.banner {
+  position: relative;
+
+  height: 300px;
+  width: 100%;
+
+  background-color: #56b127;
+}
+
+.banner .selector {
+  position: absolute;
+  bottom: 6px;
+  right: 20%;
+
+  margin: 0;
+  padding: 0;
+}
+
+.banner .selector li {
+  display: inline-block;
+
+  height: 2rem;
+  width: 1.6rem;
+  border: 1px solid #000;
+
+  list-style-type: none;
+  text-align: center;
+  line-height: 2rem;
+  vertical-align: bottom;
+
+  background-color: #a4d888;
+}
+
+.banner .selector .active {
+  height: 3rem;
+
+  line-height: 4rem;
+
+  background-color: #d9efcc;
+}
+
+/* 导航栏 */
+
+.content-tab {
+  position: relative;
+
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.content-tab ul {
+  position: relative;
+  bottom: -2px; /* 用于覆盖掉父元素的底边框 */
+
+  width: 960px;
+  padding: 0;
+  margin: 12px auto 0;
+
+  font-size: 0;
+}
+
+.content-tab ul li {
+  display: inline-block;
+
+  padding: 12px 24px;
+  border: 1px solid #e0e0e0;
+
+  list-style-type: none;
+  font-size: 1rem;
+
+  background-color: #eaeaea;
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+}
+
+.content-tab ul .active {
+  border-bottom: none;
+
+  background-color: #fff;
+}
+
+/* 内容部分 */
+
+main {
+  display: flex;
+  flex-flow: row wrap;
+
+  width: 968px; /* 额外8px用于弥补子元素的外边距 */
+  margin: 12px auto;
+}
+
+main article {
+  flex-grow: 1;
+
+  box-sizing: border-box;
+  border: 1px solid #d6d6d6;
+  margin: 4px;
+  padding: 80px;
+
+  text-align: center;
+}
+
+/* 页脚 */
+
+footer {
+  height: 200px;
+
+  line-height: 200px;
+  text-align: center;
+
+  background-color: #535353;
+  color: #fff;
+}
