@@ -1,0 +1,714 @@
+body {
+  min-width: 1600px; /* 设计稿的宽度 */
+  margin: 0;
+  padding: 0;
+}
+
+/* 首屏 */
+.intro {
+  position: relative;
+
+  height: 990px;
+
+  background: no-repeat center/100% url(imgs/图层\ 1.png);
+}
+
+.intro h2 {
+  position: absolute;
+  top: 210px;
+
+  width: 100%;
+  margin: 0;
+
+  text-align: center;
+  font-size: 3rem;
+  font-weight: 400;
+
+  color: #fff;
+}
+
+.intro .desc {
+  position: absolute;
+  top: 340px;
+  left: calc(50% - 770px / 2);
+
+  width: 770px;
+  margin: 0;
+
+  text-align: center;
+
+  color: #aaa;
+}
+
+.intro form {
+  position: absolute;
+  bottom: 210px;
+  left: calc(50% - 970px / 2);
+
+  width: 970px;
+  height: 250px;
+  border: 1px solid #aaa;
+}
+
+.intro form h3 {
+  position: absolute;
+  top: 60px;
+
+  width: 100%;
+
+  text-align: center;
+  font-size: 16px;
+
+  color: #fff;
+}
+
+.intro form .aside {
+  position: absolute;
+  top: 90px;
+
+  width: 100%;
+
+  text-align: center;
+  font-size: 12px;
+
+  color: #aaa;
+}
+
+.intro form .container {
+  position: absolute;
+  bottom: 50px;
+
+  width: 100%;
+
+  text-align: center;
+}
+
+.intro form input {
+  box-sizing: border-box;
+  width: 290px;
+  height: 50px;
+  padding: 12px;
+  border: 1px solid #aaa;
+
+  font-size: 16px;
+
+  border-radius: 5px;
+  color: #fff;
+  background: transparent;
+}
+
+.intro form input[type="password"] {
+  margin: 0 32px;
+}
+
+.intro form .sign-up {
+  height: 50px;
+  width: 128px;
+
+  border-radius: 5px;
+  background-color: #fff;
+}
+
+/* 第二屏 */
+
+.features {
+  position: relative;
+
+  height: 710px;
+}
+
+.features > .aside {
+  position: absolute;
+  top: 90px;
+
+  width: 100%;
+
+  text-align: center;
+}
+
+.features h2 {
+  position: absolute;
+  top: 140px;
+  left: calc(50% - 660px / 2);
+
+  width: 660px;
+
+  text-align: center;
+  font-weight: 400;
+  font-size: 2rem;
+}
+
+.features .container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  
+  position: absolute;
+  top: 310px;
+  left: calc(50% - 1060px / 2);
+
+  width: 1060px;
+}
+
+.features .container .feature {
+  flex: 0 0 45%;
+  overflow: auto;
+
+  zoom: 1;
+}
+
+.icon-mobile {
+  float: left;
+
+  height: 50px;
+  width: 60px;
+
+  background: no-repeat center url(imgs/Iphone\ Icon.png);
+}
+
+.icon-checkbox {
+  float: left;
+
+  height: 40px;
+  width: 60px;
+
+  background: no-repeat center url(imgs/Check\ Icon.png)
+}
+
+.icon-pen {
+  float: left;
+
+  height: 50px;
+  width: 60px;
+
+  background: no-repeat center url(imgs/Pencil\ Icon.png)
+}
+
+.icon-setting {
+  float: left;
+
+  height: 50px;
+  width: 60px;
+
+  background: no-repeat center url(imgs/Settings\ Icon.png)
+}
+
+.features .feature .text {
+  float: left;
+
+  width: calc(100% - 100px);
+  margin-left: 40px;
+}
+
+.feature .text h3 {
+  margin: 0;
+
+  font-weight: 400;
+}
+
+/* 第三屏 */
+
+.support {
+  position: relative;
+
+  height: 800px;
+
+  background: no-repeat center/100% url(imgs/图层\ 2.png)
+}
+
+.support .container {
+  position: absolute;
+  top: 180px;
+  left: 314px;;
+}
+
+.support .container h2 {
+  width: 376px;
+
+  font-weight: 400;
+
+  color: #fff;
+}
+
+.support .container .aside {
+  width: 376px;
+
+  color: #aaa;
+}
+
+.support .container .buttons {
+  margin-top: 3rem;
+}
+
+.support .buttons button {
+  width: 242px;
+  height: 62px;
+
+  border-radius: 5px;
+}
+
+.support .buttons .try {
+  margin-left: 30px;
+
+  background-color: transparent;
+  color: #fff;
+}
+
+.support .ipad {
+  position: absolute;
+  right: 0;
+  top: 100px;
+
+  height: 600px;
+  width: 646px;
+
+  background: url(imgs/Ipad.png)
+}
+
+/* 第四屏 */
+
+.products {
+  padding-bottom: 80px;
+  border: 1px solid #efefef;
+}
+
+.products h2 {
+  margin: 80px;
+
+  font-weight: 400;
+  font-size: 2rem;
+  text-align: center;
+}
+
+.products .container {
+  display: flex;
+  justify-content: center;
+}
+
+.products .container .product {
+  width: 260px;
+  margin: 0 40px;
+}
+
+.logo-singleton,
+.logo-hero,
+.logo-portland {
+  height: 50px;
+  width: 140px;
+  margin: 1rem auto;
+}
+
+.logo-singleton {
+  background: no-repeat center url(imgs/Singleton.png)
+}
+
+.logo-hero {
+  background: no-repeat center url(imgs/Hero.png)
+}
+
+.logo-portland {
+  background: no-repeat center url(imgs/Portland.png)
+}
+
+.products .product .desc {
+  margin: 0;
+
+  text-align: center;
+
+  color: #aaa;
+}
+
+/* 第五屏 */
+
+.why {
+  padding: 110px 0;
+  border: 1px solid #efefef;
+}
+
+.why .container {
+  width: 980px;
+  margin: 0 auto;
+}
+
+.why .container .item {
+  overflow: auto;
+
+  margin-top: 80px;
+
+  zoom: 1;
+}
+
+.why .container .item:nth-of-type(1) {
+  margin-top: 0;
+}
+
+.why .item .text {
+  float: left;
+
+  width: 310px;
+}
+
+.why .text h3 {
+  margin: 74px 0 32px;
+}
+
+.why .text .desc {
+  color: #aaa;
+  margin: 0;
+
+  line-height: 1.8;
+}
+
+.img-leaves,
+.img-bird {
+  float: left;
+
+  width: 570px;
+  height: 350px;
+}
+
+.img-leaves {
+  margin-right: 100px;
+
+  background: no-repeat center url(imgs/图层\ 3.png);
+}
+
+.img-bird {
+  margin-left: 100px;
+
+  background: no-repeat center url(imgs/图层\ 4.png);
+}
+
+/* 第六屏 */
+
+.crew {
+  padding: 100px 0;
+  border-bottom: 1px solid #efefef;
+}
+
+.crew h2 {
+  margin: 0 0 30px;
+
+  font-weight: 400;
+  font-size: 2rem;
+  text-align: center;
+}
+
+.crew > .desc {
+  width: 700px;
+  margin: 0 auto;
+
+  text-align: center;
+
+  color: #aaa;
+}
+
+.crew .container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  width: 980px;
+  margin: 64px auto 0;
+}
+
+.crew .teacher {
+  position: relative;
+  flex: 0 0 470px;
+
+  width: 470px;
+  height: 340px;
+  border: 1px solid #efefef;
+
+  text-align: center;
+}
+
+.crew .teacher:nth-of-type(2n+1) {
+  margin-right: 30px;
+}
+
+.crew .teacher:nth-of-type(1) {
+  margin-bottom: 30px;
+}
+
+.crew .teacher-1 {
+  background: no-repeat center url(imgs/张思远大.png);
+}
+
+.crew .teacher-2 {
+  background: no-repeat center url(imgs/2.png);
+}
+
+.crew .teacher-3 {
+  background: no-repeat center url(imgs/3.png);
+}
+
+.crew .teacher-4 {
+  background: no-repeat center url(imgs/沈大师大_meitu_3.png);
+}
+
+.crew .teacher .name {
+  position: absolute;
+  top: 110px;
+
+  width: 100%;
+  margin: 0 auto;
+
+  font-size: 1.2rem;
+
+  color: #fff;
+}
+
+.crew .teacher .desc {
+  position: absolute;
+  top: 144px;
+
+  width: 100%;
+  margin: 0 auto;
+
+  color: #aaa;
+}
+
+.crew .teacher .social {
+  position: absolute;
+  top: 192px;
+
+  width: 100%;
+
+  font-size: 0;
+  text-align: center;
+}
+
+.icon-facebook,
+.icon-twitter,
+.icon-ins {
+  display: inline-block;
+
+  height: 60px;
+  width: 60px;
+
+  border: 1px solid #eee;
+
+  border-radius: 50%;
+}
+
+.icon-facebook {
+  background: no-repeat center url(imgs/Facebook\ Icon.png);
+}
+
+.icon-twitter {
+  background: no-repeat center url(imgs/Twitter\ Icon.png);
+  margin: 0 30px;
+}
+
+.icon-ins {
+  background: no-repeat center url(imgs/Instagram\ Icon.png);
+}
+
+.crew .teacher .info {
+  width: 100%;
+  height: 100%;
+
+  opacity: 0;
+  background-color: rgba(0, 0, 0, .5);
+  transition: opacity .2s;
+}
+
+.crew .teacher:hover .info {
+  opacity: 1;
+}
+
+/* 第七屏 */
+
+.contact {
+  padding: 72px 0;
+
+  text-align: center;
+}
+
+.contact .email {
+  display: inline-block;
+
+  width: 470px;
+  border: 1px solid #ccc;
+
+  border-radius: 5px;
+}
+
+.contact .email .desc {
+  margin: 48px 0;
+
+  text-align: center;
+}
+
+.contact input {
+  box-sizing: border-box;
+  height: 50px;
+  width: 370px;
+  margin-bottom: 32px;
+  padding: 1rem;
+  border: 1px solid #ccc;
+}
+
+.contact textarea {
+  display: block;
+
+  box-sizing: border-box;
+  padding: 1rem;
+  margin: 0 auto 32px;
+  width: 370px;
+  border: 1px solid #ccc;
+}
+
+.contact button {
+  width: 370px;
+  height: 50px;
+  margin-bottom: 68px;
+
+  border-radius: 5px;
+  background-color: #000;
+  color: #fff;
+}
+
+.contact .contacts {
+  display: inline-block;
+
+  width: 360px;
+  margin-left: 128px;
+
+  text-align: left;
+}
+
+.contact .contacts h2 {
+  margin: 0;
+
+  font-size: 3rem;
+  font-weight: 400;
+}
+
+.contact .contacts .desc {
+  margin-bottom: 64px;
+
+  color: #aaa;
+}
+
+.icon-email,
+.icon-location,
+.icon-phone {
+  float: left;
+
+  width: 30px;
+  height: 36px;
+}
+
+.icon-location {
+  background: no-repeat center url(imgs/Map\ Icon.png);
+}
+
+.icon-email {
+  background: no-repeat center url(imgs/Mail\ Icon.png);
+}
+
+.icon-phone {
+  background: no-repeat center url(imgs/Phone\ Icon.png);
+}
+
+.contact .way {
+  overflow: auto;
+  zoom: 1;
+}
+
+.contact .way + .way {
+  margin-top: 32px;
+}
+
+.contact .way .val {
+  float: left;
+
+  margin: 0 0 0 10px;
+
+  line-height: 36px;
+}
+
+/* 第七屏 */
+
+footer {
+  display: flex;
+
+  padding: 80px 180px;
+
+  background-color: #141414;
+}
+
+footer ul,
+footer .social {
+  flex: 1;
+}
+
+footer ul {
+  padding: 0;
+  margin: 0;
+}
+
+footer ul li {
+  margin: 30px 0;
+
+  list-style-type: none;
+}
+
+footer li a {
+  text-decoration: none;
+
+  color: #656565;
+}
+
+footer .title {
+  margin-top: 0;
+
+  color: #fff;
+}
+
+footer .social .desc {
+  color: #656565;
+}
+
+footer .social .icons {
+  margin-top: 2rem;
+
+  font-size: 0;
+}
+
+footer .icons .icon {
+  display: inline-block;
+
+  height: 30px;
+  width: 30px;
+}
+
+footer .icons .icon + .icon {
+  margin-left: 1rem;
+}
+
+.icon-twitter-footer {
+  background: no-repeat center url(imgs/Twitter\ Icon-1.png);
+}
+
+.icon-facebook-footer {
+  background: no-repeat center url(imgs/Facebook\ Icon-1.png);
+}
+
+.icon-google-footer {
+  background: no-repeat center url(imgs/Google\ Icon.png)
+}
+
+.icon-t-footer {
+  background: no-repeat center url(imgs/Tumbler\ Icon.png);
+}
+
+.icon-weibo-footer {
+  background: no-repeat center url(imgs/Pinterest\ Icon.png);
+}
+
+.icon-leadin-footer {
+  background: no-repeat center url(imgs/LinkedIn\ Icon.png);
+}
