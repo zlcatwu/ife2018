@@ -1,0 +1,718 @@
+html {
+  height: 100%;
+
+  font-size: 12px;
+}
+
+body {
+  display: flex;
+
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+ul li {
+  list-style-type: none;
+}
+
+/* app导航栏 */
+
+.apps {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  flex: 0 0 100px;
+
+  background-color: #1d2531;
+}
+
+.apps .app {
+  width: 64px;
+  height: 64px;
+  margin-top: 20px;
+
+  cursor: pointer;
+}
+
+.icon-app-plane {
+  background: no-repeat center url(imgs/Item\ 1.png);
+}
+
+.icon-app-rocket {
+  background: no-repeat center url(imgs/Item\ 2.png);
+}
+
+.icon-app-game {
+  background: no-repeat center url(imgs/Item\ 3.png);
+}
+
+.icon-app-add {
+  background: no-repeat center url(imgs/Add\ App.png);
+}
+
+.apps .actions {
+  position: absolute;
+  bottom: 20px;
+}
+
+.apps .icon-grid,
+.apps .icon-setting {
+  display: inline-block;
+
+  height: 20px;
+  width: 20px;
+
+  cursor: pointer;
+}
+
+.icon-grid {
+  background: no-repeat center url(imgs/Grid.png);
+}
+
+.icon-setting {
+  background: no-repeat center url(imgs/Settings.png);
+}
+
+/* 内容导航栏 */
+
+.content-nav {
+  flex: 0 0 250px;
+  position: relative;
+
+  width: 250px;
+  padding: 0 25px;
+
+  background-color: #222c3c;
+}
+
+.content-nav ul {
+  margin: 0 0 24px;
+  padding: 0 0 24px;
+  border-bottom: 1px solid #2a3547;
+}
+
+.content-nav ul li {
+  position: relative;
+}
+
+.content-nav ul .title {
+  margin-bottom: 24px;
+
+  color: #5b6779;
+}
+
+.content-nav li .badge {
+  position: absolute;
+  right: 0;
+
+  padding: 2px 8px;
+  
+  border-radius: 20px;
+  color: #fff;
+}
+
+.badge-primary {
+  background-color: #2da1f7;
+}
+
+.badge-error {
+  background-color: #d33014;
+}
+
+.content-nav .title .icon-setting {
+  position: absolute;
+  right: 0;
+  display: inline-block;
+
+  height: 20px;
+  width: 20px;
+
+  background: no-repeat center url(imgs/Settings.png);
+  cursor: pointer;
+}
+
+.content-nav ul li {
+  margin-top: 20px;
+}
+
+.content-nav a {
+  display: block;
+
+  height: 100%;
+  width: 100%;
+
+  text-decoration: none;
+  color: #b7b0cd;
+}
+
+.content-nav .icon-books,
+.content-nav .icon-tutorials,
+.content-nav .icon-stocks,
+.content-nav .icon-infographics {
+  display: inline-block;
+
+  height: 24px;
+  width: 24px;
+
+  vertical-align: middle;
+}
+
+.content-nav .icon-books {
+  background: no-repeat center url(imgs/Book\ of\ Wisdom.png);
+}
+
+.content-nav .icon-tutorials {
+  background: no-repeat center url(imgs/Video\ Camera.png);
+}
+
+.content-nav .icon-stocks {
+  background: no-repeat center url(imgs/Painting.png);
+}
+
+.content-nav .icon-infographics {
+  background: no-repeat center url(imgs/Chart.png);
+}
+
+.content-nav .goals {
+  position: absolute;
+  bottom: 0;
+
+  width: 250px;
+  margin: 0 auto 20px;
+}
+
+.content-nav .goals .text {
+  position: relative;
+
+  height: 24px;
+
+  color: #fff;
+}
+
+.goals .text .title {
+  position: absolute;
+  left: 0;
+}
+
+.goals .text .count {
+  position: absolute;
+  right: 0;
+}
+
+.goals .progress {
+  width: 100%;
+  height: 6px;
+
+  background-color: #2d3848;
+  border-radius: 4px;
+}
+
+.goals .progress .loaded {
+  width: 30%;
+  height: 6px;
+
+  background: linear-gradient(to right, #805de6, #9286d4);
+  border-radius: 4px;
+}
+
+/* 主体内容块 */
+
+.messages {
+  overflow: hidden;
+
+  height: 100%;
+}
+
+.messages header {
+  position: relative;
+  
+  height: 80px;
+  border-bottom: 1px solid #e6e9ec;
+}
+
+.messages header .title {
+  margin-left: 30px;
+
+  font-size: 2rem;
+  line-height: 80px;
+}
+
+.messages header .user {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+
+  height: 50px;
+  width: 210px;
+  margin: 15px 30px 15px 0;
+}
+
+header .user .avatar {
+  flex: 0 0 50px;
+
+  width: 50px;
+  height: 50px;
+
+  border-radius: 50%;
+}
+
+header .user .status {
+  position: absolute;
+  left: 30px;
+  top: 30px;
+
+  width: 20px;
+  height: 20px;
+
+  border-radius: 50%;
+  background: no-repeat center/80% #fff url(imgs/Status.png);
+}
+
+header .user .text {
+  flex: 0 0 100px;
+
+  margin: 0 34px 0 14px;
+}
+
+header .user .name {
+  font-size: 1.4rem;
+  font-weight: 700;
+
+  color: #2399f1;
+}
+
+header .user .permission {
+  color: #b5b5b5;
+}
+
+header .user .icon-dropdown {
+  width: 20px;
+  height: 20px;
+
+  background: no-repeat center url(imgs/dropdown.png);
+  cursor: pointer;
+}
+
+.msg-container {
+  display: flex;
+
+  height: calc(100% - 80px);
+}
+
+.msg-container .contacts .search {
+  position: relative;
+  flex: 0 0 400px;
+
+  box-sizing: border-box;
+  width: 400px;
+  height: 70px;
+  border-right: 1px solid #e6e9ec;
+  border-bottom: 1px solid #e6e9ec;
+
+  line-height: 70px;
+}
+
+.contacts .search input {
+  box-sizing: border-box;
+  width: 340px;
+  height: 36px;
+  padding: 12px 36px 12px 12px; /* right = 36px 避免被按钮遮挡 */
+  margin-left: 30px;
+  border: 1px solid #e6e9ec;
+
+  border-radius: 4px;
+}
+
+.contacts .search button {
+  position: relative;
+  right: 36px;
+  display: inline-block;
+
+  width: 24px;
+  height: 24px;
+  border: none;
+
+  vertical-align: middle;
+
+  background: no-repeat center url(imgs/Search\ icon.png);
+}
+
+/* 消息列表 */
+
+.msg-list {
+  overflow: auto;
+
+  height: calc(100% - 70px);
+  box-sizing: border-box;
+  border-right: 1px solid #e6e9ec;
+}
+
+.msg-list .msg {
+  position: relative;
+  flex: 0 0 400px;
+
+  box-sizing: border-box;
+  width: 400px;
+  padding: 16px 20px 16px 32px;
+  border-bottom: 1px solid #e6e9ec;
+}
+
+.msg-list .msg .user {
+  display: flex;
+  align-items: center;
+}
+
+.msg-list .user .avatar {
+  flex: 0 0 50px;
+
+  width: 50px;
+  height: 50px;
+  margin-right: 20px;
+
+  border-radius: 50%;
+}
+
+.msg-list .user .name {
+  display: inline-block;
+
+  font-size: 1.2rem;
+}
+
+.msg-list .user .group {
+  color: #b5b5b5;
+}
+
+.msg-list .time {
+  position: absolute;
+  right: 20px;
+  top: 24px;
+
+  color: #b5b5b5;
+}
+
+.msg-list .msg .content {
+  position: relative;
+
+  color: #585d68;
+}
+
+.msg-list .msg .badge {
+  position: absolute;
+  right: 0;
+  top: calc(50% - 8px);
+
+  padding: 2px 8px;
+
+  border-radius: 50%;
+  color: #fff;
+}
+
+.msg-list .active {
+  border-left: 4px solid #2399f1;
+}
+
+.msg-list .user .status {
+  display: none;
+}
+
+.msg-list .active .name {
+  color: #00aaff;
+}
+
+.msg-list .active .status {
+  display: inline-block;
+  position: relative;
+  bottom: 2px;
+
+  width: 8px;
+  height: 8px;
+
+  background-color: #00aaff;
+  border-radius: 50%;
+}
+
+/* 聊天详页 */
+
+.details {
+  flex: 1;
+}
+
+.details .header {
+  position: relative;
+
+  box-sizing: border-box;
+  height: 70px;
+  padding: 24px;
+
+  border-bottom: 1px solid #e6e9ec;
+}
+
+.details .header .name {
+  margin-right: 1rem;
+
+  font-size: 1.4rem;
+}
+
+.details .icon-dot-green {
+  display: inline-block;
+
+  width: 8px;
+  height: 8px;
+
+  border-radius: 50%;
+  background-color: #1bb934;
+}
+
+.details .actions {
+  display: flex;
+  position: absolute;
+  right: 20px;
+  top: calc(50% - 32px / 2);
+  
+  box-sizing: border-box;
+  height: 32px;
+
+  line-height: 32px;
+}
+
+.details .buttons {
+  display: inline-block;
+  flex-grow: 0;
+
+  box-sizing: border-box;
+  border: 1px solid #ced0da;
+  margin-right: 24px;
+
+  font-size: 0;
+  line-height: 1.5;
+
+  border-radius: 4px;
+  background: linear-gradient(to top, #f2f4f8, #fff);
+}
+
+.details .icon-add,
+.details .icon-upload,
+.details .icon-delete,
+.details .icon-arrow-left,
+.details .icon-arrow-right {
+  position: relative;
+  bottom: 1px; /* 用于修正按钮间的分隔栏冒出头 */
+  display: inline-block;
+
+  height: 32px;
+  width: 36px;
+
+  cursor: pointer;
+}
+
+.details .icon-add {
+  background: no-repeat center url(imgs/User\ icon.png);
+}
+
+.details .icon-upload {
+  border-left: 1px solid #ced0ce;
+  border-right: 1px solid #ced0ce;
+
+  background: no-repeat center url(imgs/Upload\ icon.png);
+}
+
+.details .icon-delete {
+  background: no-repeat center url(imgs/Trash\ icon.png);
+}
+
+.details .icon-arrow-left {
+  border-right: 1px solid #ced0ce;
+
+  background: no-repeat center url(imgs/Arrow\ left.png);
+}
+
+.details .icon-arrow-right {
+  background: no-repeat center url(imgs/Arrow\ right.png);
+}
+
+.details .pages {
+  display: inline-block;
+
+  padding: 0 20px;
+  border-left: 1px solid #f0f1f4;
+}
+
+.details .main {
+  overflow: auto;
+
+  height: calc(100% - 70px);
+}
+
+.details .main article {
+  position: relative;
+
+  padding: 24px 30px;
+}
+
+.details .main article + article {
+  border-top: 1px solid #e6e9ec;
+}
+
+.details .main .msg {
+  overflow: auto;
+  zoom: 1;
+}
+
+.details article .msg + .msg {
+  margin-top: 20px;
+}
+
+.details .main .avatar {
+  float: left;
+
+  width: 50px;
+  height: 50px;
+
+  border-radius: 50%;
+}
+
+.details .main .text {
+  float: left;
+
+  margin-left: 20px;
+
+  width: calc(100% - 100px);
+}
+
+.details .main .name {
+  font-size: 1.2rem;
+}
+
+.details .main .time {
+  margin-left: 8px;
+
+  color: #909399;
+}
+
+.details .main .content {
+  color: #909399;
+}
+
+.details .main .date {
+  display: inline-block;
+  position: absolute;
+  top: -1rem;
+  left: calc(50% - 120px / 2);
+
+  height: 2rem;
+  width: 120px;
+  
+  line-height: 2rem;
+  text-align: center;
+
+  color: #909399;
+  background-color: #fff;
+}
+
+.details .new {
+  margin-bottom: 80px; /* 避免被输入框遮挡 */
+}
+
+.details .new .date {
+  color: #a7d6f9;
+}
+
+.details .main .new {
+  border-top: 1px solid #a7d6f9;
+}
+
+.details .imgs {
+  font-size: 0;
+}
+
+.details .imgs .img {
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.details .imgs .img + .img {
+  margin-left: 14px;
+}
+
+.details .imgs img {
+  width: 156px;
+  height: 100px;
+}
+
+.details .img .look {
+  position: absolute;
+  top: 0;
+
+  width: 156px;
+  height: 100px;
+}
+
+.details .img .look:hover {
+  background-color: rgba(0, 0, 0, .5);
+}
+
+.details .look:hover .icon-look {
+  position: absolute;
+  top: calc(50% - 54px / 2);
+  left: calc(50% - 54px / 2);
+  display: inline-block;
+
+  width: 54px;
+  height: 54px;
+
+  background: no-repeat center url(imgs/Open\ icon.png) rgba(255, 255, 255, .5);
+  border-radius: 50%;
+}
+
+/* 发送框 */
+
+.msg-send {
+  position: fixed;
+  bottom: 24px;
+
+  box-sizing: border-box;
+  width: calc(100% - 100px - 250px - 400px - 30px - 30px);
+  height: 54px;
+  padding: 0 30px;
+}
+
+.msg-send button {
+  position: absolute;
+
+  box-sizing: border-box;
+  padding: 0;
+  width: 54px;
+  height: 54px;
+  border: 1px solid #ced0ce;
+
+  border-radius: 4px;
+  background: linear-gradient(to top, #f2f4f8, #fff);
+}
+
+.msg-send button .icon-plus {
+  display: inline-block;
+
+  height: 54px;
+  width: 54px;
+
+  background: no-repeat center/30% url(imgs/Add\ icon.png);
+}
+
+.msg-send input {
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  padding: 20px 20px 20px 74px;
+  border: 1px solid #ced0ce;
+
+  border-radius: 4px;
+}

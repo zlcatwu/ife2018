@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>复杂布局</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav class="apps">
+    <div class="app icon-app-plane"></div>
+    <div class="app icon-app-rocket"></div>
+    <div class="app icon-app-game"></div>
+    <div class="app icon-app-add"></div>
+    <div class="actions">
+      <span class="icon-grid"></span>
+      <span class="icon-setting"></span>
+    </div>
+  </nav>
+
+  <nav class="content-nav">
+    <ul class="menu">
+      <li class="title">
+        <span>MENU</span>
+        <span class="icon-setting"></span>
+      </li>
+      <li>
+        <a href="#!">
+          <span>Overview</span>
+          <span class="badge badge-primary">54</span>
+        </a>
+      </li>
+      <li>
+        <a href="#!">
+          <span>Sales</span>
+        </a>
+      </li>
+      <li>
+        <a href="#!">
+          <span>Your Staff</span>
+        </a>
+      </li>
+      <li>
+        <a href="#!">
+          <span>Analytics & Targeting</span>
+        </a>
+      </li>
+      <li>
+        <a href="#!">
+          <span>What's New</span>
+        </a>
+      </li>
+    </ul>
+
+    <ul class="products">
+      <li class="title">
+        <span>YOUR PRODUCTS</span>
+        <span class="icon-setting"></span>
+      </li>
+      <li>
+        <a href="#!">
+          <span class="icon-books"></span>
+          <span class="name">Books</span>
+        </a>
+      </li>
+      <li>
+        <a href="#!">
+          <span class="icon-tutorials"></span>
+          <span class="name">Tutorials</span>
+        </a>
+      </li>
+      <li>
+        <a href="#!">
+          <span class="icon-stocks"></span>
+          <span class="name">Stocks</span>
+        </a>
+      </li>
+      <li>
+        <a href="#!">
+          <span class="icon-infographics"></span>
+          <span class="name">Infographics</span>
+        </a>
+      </li>
+    </ul>
+
+    <ul class="dashboard">
+      <li class="title">
+        <span>DASHBOARD</span>
+        <span class="icon-setting"></span>
+      </li>
+      <li>
+        <a href="#!">
+          <span>Messages</span>
+          <span class="badge badge-primary">21</span>
+        </a>
+      </li>
+      <li>
+        <a href="#!">
+          <span>Connections</span>
+        </a>
+      </li>
+      <li>
+        <a href="#!">
+          <span>Integrations</span>
+          <span class="badge badge-error">!</span>
+        </a>
+      </li>
+      <li>
+        <a href="#!">
+          <span>Account Settings</span>
+        </a>
+      </li>
+      <li>
+        <a href="#!">
+          <span>App Settings</span>
+        </a>
+      </li>
+    </ul>
+
+    <div class="goals">
+      <div class="text">
+        <span class="title">Monthly Goals</span>
+        <span class="count">$580/$3200</span>
+      </div>
+      <div class="progress">
+        <div class="loaded"></div>
+      </div>
+    </div>
+  </nav>
+
+  <section class="messages">
+    <header>
+      <span class="title">Messages</span>
+      <div class="user">
+        <img src="imgs/Face.png" class="avatar">
+        <div class="status"></div>
+        <div class="text">
+          <span class="name">Jordan J.</span>
+          <span class="permission">Administrator</span>
+        </div>
+        <span class="icon-dropdown"></span>
+      </div>
+    </header>
+
+    <div class="msg-container">
+      <section class="contacts">
+        <div class="search">
+          <input placeholder="Search" type="text">
+          <button></button>
+        </div>
+        <div class="msg-list">
+          <article class="msg active">
+            <div class="user">
+              <img src="imgs/Face-1.png" class="avatar">
+              <div class="text">
+                <div class="status"></div>
+                <div class="name">Bessie Berry</div>
+                <div class="group">Twitter</div>
+              </div>
+            </div>
+            <span class="time">3m</span>
+            <p class="content">
+              <span>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Exercitationem optio harum ab, quo perspiciatis soluta!
+              </span>
+              <span class="badge badge-primary">4</span>
+            </p>
+          </article>
+
+          <article class="msg">
+            <div class="user">
+              <img src="imgs/Face-8.png" class="avatar">
+              <div class="text">
+                <div class="status"></div>
+                <div class="name">Victor Weber</div>
+                <div class="group">Adobe</div>
+              </div>
+            </div>
+            <span class="time">8m</span>
+            <p class="content">
+              <span>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas possimus veritatis nostrum, officia minus voluptate?
+              </span>
+            </p>
+          </article>
+
+          <article class="msg">
+            <div class="user">
+              <img src="imgs/Face-7.png" class="avatar">
+              <div class="text">
+                <div class="status"></div>
+                <div class="name">Dustin Benson</div>
+                <div class="group">Facebook</div>
+              </div>
+            </div>
+            <span class="time">Yesterday</span>
+            <p class="content">
+              <span>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam quasi voluptatum aliquam, dolorem iste excepturi?
+              </span>
+            </p>
+          </article>
+
+          <article class="msg">
+            <div class="user">
+              <img src="imgs/Face-6.png" class="avatar">
+              <div class="text">
+                <div class="status"></div>
+                <div class="name">Jack Mason</div>
+                <div class="group">Yahoo</div>
+              </div>
+            </div>
+            <span class="time">Yesterday</span>
+            <p class="content">
+              <span>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi, nulla tempore? Porro consequuntur illo dolores.
+              </span>
+            </p>
+          </article>
+
+          <article class="msg">
+            <div class="user">
+              <img src="imgs/Face-5.png" class="avatar">
+              <div class="text">
+                <div class="status"></div>
+                <div class="name">Stephen Shelton</div>
+                <div class="group">Snapchat</div>
+              </div>
+            </div>
+            <span class="time">13 Jun</span>
+            <p class="content">
+              <span>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, harum est libero quam quod laborum.
+              </span>
+            </p>
+          </article>
+
+          <article class="msg">
+            <div class="user">
+              <img src="imgs/Face-4.png" class="avatar">
+              <div class="text">
+                <div class="status"></div>
+                <div class="name">Sally Willis</div>
+                <div class="group">Twitter</div>
+              </div>
+            </div>
+            <span class="time">12 Jun</span>
+            <p class="content">
+              <span>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error alias nesciunt officiis nihil dolorem tempore.
+              </span>
+            </p>
+          </article>
+
+          <article class="msg">
+            <div class="user">
+              <img src="imgs/Face-3.png" class="avatar">
+              <div class="text">
+                <div class="status"></div>
+                <div class="name">Robert Patton</div>
+                <div class="group">A Team</div>
+              </div>
+            </div>
+            <span class="time">9 Jun</span>
+            <p class="content">
+              <span>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Placeat vel eum minus, iure unde consequuntur!
+              </span>
+            </p>
+          </article>
+
+        </div>
+      </section>
+
+      <section class="details">
+        <div class="header">
+          <span class="name">Bessie Berry</span>
+          <span class="icon-dot-green"></span>
+          <div class="actions">
+            <div class="buttons">
+              <span class="icon-add"></span>
+              <span class="icon-upload"></span>
+              <span class="icon-delete"></span>
+            </div>
+            <span class="pages">1 of 28</span>
+            <div class="buttons">
+              <span class="icon-arrow-left"></span>
+              <span class="icon-arrow-right"></span>
+            </div>
+          </div>
+        </div>
+
+        <div class="main">
+          <article>
+            <div class="msg">
+              <img src="imgs/Face-1.png" class="avatar">
+              <div class="text">
+                <span class="name">Bessie Berry</span>
+                <span class="time">8:31 AM</span>
+                <p class="content">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Alias officia reprehenderit beatae nam eius odio omnis voluptatibus neque magnam consequatur repellendus quod, adipisci deserunt tempora quas eum atque nesciunt vel.</p>
+              </div>
+            </div>
+            <div class="msg">
+              <img src="imgs/Face.png" class="avatar">
+              <div class="text">
+                <span class="name">Jordan Jackson</span>
+                <span class="time">8:31 AM</span>
+                <p class="content">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Alias officia reprehenderit beatae nam eius odio omnis voluptatibus neque magnam consequatur repellendus quod, adipisci deserunt tempora quas eum atque nesciunt vel.</p>
+              </div>
+            </div>
+          </article>
+
+          <article>
+            <span class="date">Tuesday</span>
+            <div class="msg">
+              <img src="imgs/Face-1.png" class="avatar">
+              <div class="text">
+                <span class="name">Bessie Berry</span>
+                <span class="time">8:31 AM</span>
+                <p class="content">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Alias officia reprehenderit beatae nam eius odio omnis voluptatibus neque magnam consequatur repellendus quod, adipisci deserunt tempora quas eum atque nesciunt vel.</p>
+              </div>
+            </div>
+            <div class="msg">
+              <img src="imgs/Face.png" class="avatar">
+              <div class="text">
+                <span class="name">Jordan Jackson</span>
+                <span class="time">8:31 AM</span>
+                <p class="content">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Alias officia reprehenderit beatae nam eius odio omnis voluptatibus neque magnam consequatur repellendus quod, adipisci deserunt tempora quas eum atque nesciunt vel.</p>
+                <div class="imgs">
+                  <div class="img">
+                    <img src="imgs/Photo.png">
+                    <div class="look">
+                      <span class="icon-look"></span>
+                    </div>
+                  </div>
+                  <div class="img">
+                    <img src="imgs/Photo-1.png">
+                    <div class="look">
+                      <span class="icon-look"></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="new">
+            <span class="date">New Message</span>
+            <div class="msg">
+              <img src="imgs/Face-1.png" class="avatar">
+              <div class="text">
+                <span class="name">Bessie Berry</span>
+                <span class="time">8:31 AM</span>
+                <p class="content">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Alias officia reprehenderit beatae nam eius odio omnis voluptatibus neque magnam consequatur repellendus quod, adipisci deserunt tempora quas eum atque nesciunt vel.</p>
+              </div>
+            </div>
+            <div class="msg">
+              <img src="imgs/Face.png" class="avatar">
+              <div class="text">
+                <span class="name">Jordan Jackson</span>
+                <span class="time">8:31 AM</span>
+                <p class="content">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Alias officia reprehenderit beatae nam eius odio omnis voluptatibus neque magnam consequatur repellendus quod, adipisci deserunt tempora quas eum atque nesciunt vel.</p>
+              </div>
+            </div>
+          </article>
+
+          <div class="msg-send">
+            <button>
+              <span class="icon-plus"></span>
+            </button>
+            <input type="text">
+          </div>
+        </div>
+      </section>
+    </div>
+  </section>
+  
+</body>
+</html>
