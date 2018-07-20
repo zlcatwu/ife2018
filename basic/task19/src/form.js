@@ -34,6 +34,9 @@ function getProductId() {
 
 function updateCheckbox() {
   const { regions, products } = getParams();
+  if (regions === undefined && products === undefined) {
+    return;
+  }
   const selectedRegions = regions.split(',').map((idx) => `region-${idx}`);
   const selectedProducts = products.split(',').map((idx) => `product-${idx}`);
   // 通过取消不在 hash 中的 checkbox 完成功能
