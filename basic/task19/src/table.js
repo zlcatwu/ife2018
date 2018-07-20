@@ -226,7 +226,7 @@ function handleData(data, { regions, products }) {
         product: row.product
       });
     });
-  } else if (region.length === 1) {
+  } else if (regions.length === 1) {
     header.unshift('商品');
     header.unshift('地区');
     data.forEach((row) => {

@@ -39,7 +39,7 @@ function updateCheckbox() {
   }
   const selectedRegions = regions.split(',').map((idx) => `region-${idx}`);
   const selectedProducts = products.split(',').map((idx) => `product-${idx}`);
-  // 通过取消不在 hash 中的 checkbox 完成功能
+  // 通过取消不在路由中的 checkbox 完成功能
   const regionAll = document.querySelector('#region-all');
   const productAll = document.querySelector('#product-all');
   getCheckboxList(regionWrapper).forEach((node) => {
@@ -57,9 +57,9 @@ function updateCheckbox() {
 }
 
 function getParams() {
-  let hash = location.hash;
-  hash = hash.slice(1);
-  const params = hash.split('&');
+  let search = location.search;
+  search = search.slice(1);
+  const params = search.split('&');
   const regions = params.filter((param) => param.indexOf('region') !== -1);
   const products = params.filter((param) => param.indexOf('product') !== -1);
   const result = {};
@@ -75,17 +75,17 @@ function getParams() {
 }
 
 function setParams({ regions, products }) {
-  let hash = '';
+  let search = '?';
   if (regions) {
-    hash += `regions=${regions}`;
+    search += `regions=${regions}`;
   }
   if (products) {
     if (regions) {
-      hash += '&';
+      search += '&';
     }
-    hash += `products=${products}`;
+    search += `products=${products}`;
   }
-  location.hash = hash;
+  window.history.replaceState({}, null, search);
 }
 
 function createCheckbox(id, value) {
