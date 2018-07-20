@@ -1,0 +1,38 @@
+table {
+  margin: 0 auto;
+
+  text-align: center;
+}
+
+td, th, table {
+  border: 1px solid #000;
+}
+
+td {
+  width: 50px;
+  padding: 6px;
+}
+
+td input {
+  width: 30px;
+}
+
+/* 用于替代显示编辑 */
+td[data-month] {
+  cursor: pointer;
+}
+
+.container {
+  width: 620px;
+  margin: 0 auto;
+}
+
+.container .bar-wrapper,
+.container #canvas {
+  width: 50%;
+}
+
+#region-wrapper,
+#product-wrapper {
+  text-align: center;
+}
